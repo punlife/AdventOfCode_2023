@@ -1,7 +1,7 @@
 ﻿using AdventOfCode_2023.Day2;
 using Newtonsoft.Json;
 
-namespace AdventOfCode_2023_Tests.Day1;
+namespace AdventOfCode_2023_Tests.Day2;
 
 public class Day2Test
 {
