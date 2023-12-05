@@ -1,23 +1,30 @@
-﻿using AdventOfCode_2023.Day3;
-using Serilog;
+﻿using Serilog;
 
 namespace AdventOfCode_2023.Day4;
 
 public class Day4Runner : IDayRunner
 {
     // Day 4
-    
-    public void ExecuteTask1(string[] input)
+    // Pretty simple and comfy task, not much to explain
+    // T2 didn't really require much extra work outside of just creating the duplicates
+    public int ExecuteTask1(string[] input)
     {
         Log.Information("Day4:Task1");
+        var scratchcardValidator = new ScratchcardValidator();
+        var scratchcards = ScratchcardLoader.CreateScratchcardsFromInput(input);
+        var result = scratchcardValidator.ValidateScratchcards(scratchcards);
 
-        Log.Information($"Result: {0}");
+        return result;
     }
 
-    public void ExecuteTask2(string[] input)
+    public int ExecuteTask2(string[] input)
     {
         Log.Information("Day4:Task2");
-        
-        Log.Information($"Result: {0}");
+        // Basically same as above, create a dictionary based on ID (change ID to int), increment through IDs to create copies 
+        var scratchcardValidator = new ScratchcardValidator();
+        var scratchcards = ScratchcardLoader.CreateScratchcardDictionaryFromInput(input);
+        var result = scratchcardValidator.ValidateScratchcardsT2(scratchcards);
+  
+        return result;
     }
 }

@@ -23,8 +23,11 @@ IDayRunner day5Runner = new Day5Runner();
 IDayRunner day6Runner = new Day6Runner();
 IDayRunner day7Runner = new Day7Runner();
 
-day1Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day1Input.txt"));
-day2Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day2Input.txt"));
-day3Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day3Input.txt"));
+// day1Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day1Input.txt"));
+// day2Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day2Input.txt"));
+// day3Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day3Input.txt"));
+// day4Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day4Input.txt"));
+day5Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day5Input.txt"));
+
 
 Console.ReadLine();

@@ -14,7 +14,7 @@ public class Day3Runner : IDayRunner
     // if symbol found note it down
 
     
-    public void ExecuteTask1(string[] input)
+    public int ExecuteTask1(string[] input)
     {
         Log.Information("Day3:Task1");
         
@@ -23,11 +23,12 @@ public class Day3Runner : IDayRunner
         var engine = new EngineMap(validator, input);
         var partNumbers = engine.TraverseMap();
         var numbers = partNumbers.Select(int.Parse).ToList();
-     
-        Log.Information($"Result: {numbers.Sum()}");
+
+        var result = numbers.Sum();
+        return result;
     }
 
-    public void ExecuteTask2(string[] input)
+    public int ExecuteTask2(string[] input)
     {
        Log.Information("Day3:Task2");
        
@@ -35,8 +36,9 @@ public class Day3Runner : IDayRunner
         validator.PopulateAllowedCharacters(new[]{"*"});
         var engine = new EngineMap(validator, input);
         var partNumbers = engine.TraverseMapT2();
-       
-        Log.Information($"Result: {partNumbers.Sum()}");
+
+        var result = partNumbers.Sum();
+        return result;
     }
 
     // Only for testing

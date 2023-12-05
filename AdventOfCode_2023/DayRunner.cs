@@ -1,13 +1,15 @@
-﻿namespace AdventOfCode_2023;
+﻿using Serilog;
+
+namespace AdventOfCode_2023;
 
 public interface IDayRunner
 {
     public void ExecuteTasks(string[] input)
     {
-        ExecuteTask1(input);
-        ExecuteTask2(input);
+        Log.Information($"Result: {ExecuteTask1(input)}");
+        Log.Information($"Result: {ExecuteTask2(input)}");
     }
-    
-    void ExecuteTask1(string[] input);
-    void ExecuteTask2(string[] input);
+
+    int ExecuteTask1(string[] input);
+    int ExecuteTask2(string[] input);
 }

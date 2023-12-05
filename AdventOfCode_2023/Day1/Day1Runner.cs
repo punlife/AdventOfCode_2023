@@ -9,17 +9,21 @@ public class Day1Runner : IDayRunner
     // For T1, look until a digit is found, put all digits into a string grab first and last and parse
     // For T2 traverse the string from front/back until a numerical value or text value is recognized, break and return 
 
-    public void ExecuteTask1(string[] input)
+    public int ExecuteTask1(string[] input)
     {
         var textProcessor = new TextProcessor();
         Log.Information("Day1:Task1");
-        Log.Information($"Result: {textProcessor.ProcessTaskOneText(input)}");
+        var result = textProcessor.ProcessTaskOneText(input);
+
+        return result;
     }
 
-    public void ExecuteTask2(string[] input)
+    public int ExecuteTask2(string[] input)
     {
         var textProcessor = new TextProcessor();
         Log.Information("Day1:Task2");
-        Log.Information($"Result: {textProcessor.ProcessTaskTwoText(input)}");
+        var result = textProcessor.ProcessTaskTwoText(input);
+
+        return result;
     }
 }

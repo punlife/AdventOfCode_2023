@@ -7,17 +7,19 @@ public class Day7Runner : IDayRunner
     // Day 7
 
     
-    public void ExecuteTask1(string[] input)
+    public int ExecuteTask1(string[] input)
     {
         Log.Information("Day7:Task1");
 
-        Log.Information($"Result: {0}");
+        var result = 0;
+        return result;
     }
 
-    public void ExecuteTask2(string[] input)
+    public int ExecuteTask2(string[] input)
     {
         Log.Information("Day7:Task2");
 
-        Log.Information($"Result: {0}");
+        var result = 0;
+        return result;
     }
 }
