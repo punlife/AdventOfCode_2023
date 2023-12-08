@@ -1,12 +1,11 @@
-﻿using AdventOfCode_2023.Day2;
-using Serilog;
+﻿using Serilog;
 
-namespace AdventOfCode_2023.Day3;
+namespace AdventOfCode_2023.Day6;
 
 public class Day6Runner : IDayRunner
 {
     // Day 6
-
+    // Briefly read this, initial idea is to just brute force every outcome
 
     public int ExecuteTask1(string[] input)
     {

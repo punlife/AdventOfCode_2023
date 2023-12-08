@@ -5,6 +5,8 @@ using AdventOfCode_2023.Day1;
 using AdventOfCode_2023.Day2;
 using AdventOfCode_2023.Day3;
 using AdventOfCode_2023.Day4;
+using AdventOfCode_2023.Day5;
+using AdventOfCode_2023.Day6;
 using AdventOfCode_2023.Day7;
 using Serilog;
 
@@ -28,6 +30,8 @@ IDayRunner day7Runner = new Day7Runner();
 // day3Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day3Input.txt"));
 // day4Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day4Input.txt"));
 day5Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day5Input.txt"));
+// day6Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day6Input.txt"));
+// day7Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day7Input.txt"));
 
 
 Console.ReadLine();
