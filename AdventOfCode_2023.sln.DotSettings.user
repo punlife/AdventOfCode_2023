@@ -16,7 +16,7 @@
     &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5ebac728_002D03e4_002D4ebe_002D809d_002Dc4751530b268/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41c0dd66_002D3c6d_002D46a4_002Db1a9_002Dc09010e94411/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day1Test&lt;/TestId&gt;&#xD;
@@ -24,6 +24,40 @@
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestSetValidation&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestReturnsPowers&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day4.Day4Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestExampleInput&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day6.Day6Test.TestT1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day6.Day6Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day7.Day7Test.TestT1&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFile&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day7/f:Day7Test.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5ebac728_002D03e4_002D4ebe_002D809d_002Dc4751530b268/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day1Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestLineProcessing&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestSetValidation&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestReturnsPowers&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day4.Day4Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestExampleInput&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5fb4b435_002Db31f_002D47d7_002Da7ed_002D76bc29ad0eea/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day1Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestLineProcessing&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestSetValidation&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestReturnsPowers&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day4.Day4Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestExampleInput&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day6.Day6Test.TestT1&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
   &lt;/Or&gt;&#xD;
@@ -48,6 +82,24 @@
     &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day1Test.TestTextProcessorT1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de406fcc_002Dfef5_002D4f3e_002D93d6_002De71d3bdadc59/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day1Test&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestLineProcessing&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestSetValidation&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestReturnsPowers&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day4.Day4Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestExampleInput&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day6.Day6Test.TestT1&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day6.Day6Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day7.Day7Test.TestT1&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFile&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day7/f:Day7Test.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f8ab515b_002D7681_002D40a4_002D8fd2_002D08b64a39b8fa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
@@ -57,6 +109,7 @@
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestSetValidation&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day1.Day2Test.TestReturnsPowers&lt;/TestId&gt;&#xD;
       &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day4.Day4Test.TestT2&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::07320BD5-8358-4802-96E4-EE654E88EF35::net7.0::AdventOfCode_2023_Tests.Day5.Day5Test.TestExampleInput&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFolder&gt;07320BD5-8358-4802-96E4-EE654E88EF35/d:Day3&lt;/ProjectFolder&gt;&#xD;
   &lt;/Or&gt;&#xD;
