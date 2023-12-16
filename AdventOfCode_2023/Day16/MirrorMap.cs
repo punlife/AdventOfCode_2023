@@ -10,10 +10,12 @@ public class MirrorMap
     public int MapYLength { get; }
     
     public HashSet<string> EnergisedCells { get; }
+    public HashSet<string> LaserOriginPoints { get; }
     public MirrorMap(char[,] map)
     {
         Map = map;
         EnergisedCells = new HashSet<string>();
+        LaserOriginPoints = new HashSet<string>();
 
         MapYLength = map.GetLength(0);
         MapXLength = map.GetLength(1);
@@ -46,8 +48,7 @@ public class MirrorMap
             switch (value)
             {
                 case '|' or '-':
-                    ProcessSplitter(coordinate, value is '-');
-                    break;
+                    return ProcessSplitter(coordinate, value is '-');
                 case '\\' or '/':
                     ProcessMirror(coordinate, value is '/');
                     break;
@@ -69,19 +70,15 @@ public class MirrorMap
             {
                 case LaserDirection.UP:
                     coordinate.Direction = LaserDirection.RIGHT;
-                    coordinate.X += 1;
                     break;
                 case LaserDirection.DOWN:
                     coordinate.Direction = LaserDirection.LEFT;
-                    coordinate.X -= 1;
                     break;
                 case LaserDirection.LEFT:
                     coordinate.Direction = LaserDirection.DOWN;
-                    coordinate.Y += 1;
                     break;
                 case LaserDirection.RIGHT:
                     coordinate.Direction = LaserDirection.UP;
-                    coordinate.Y -= 1;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -93,19 +90,15 @@ public class MirrorMap
             {
                 case LaserDirection.UP:
                     coordinate.Direction = LaserDirection.LEFT;
-                    coordinate.X -= 1;
                     break;
                 case LaserDirection.DOWN:
                     coordinate.Direction = LaserDirection.RIGHT;
-                    coordinate.X += 1;
                     break;
                 case LaserDirection.LEFT:
                     coordinate.Direction = LaserDirection.UP;
-                    coordinate.Y -= 1;
                     break;
                 case LaserDirection.RIGHT:
                     coordinate.Direction = LaserDirection.DOWN;
-                    coordinate.Y += 1;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -113,19 +106,43 @@ public class MirrorMap
         }
     }
     
-    private void ProcessSplitter(Coordinate coordinate, bool horizontal)
+    private bool ProcessSplitter(Coordinate coordinate, bool horizontal)
     {
-        switch (horizontal)
+        // When splitter used, make a note and keep coordinate in memory to avoid infinite loops
+        if (horizontal)
         {
-            case true when !(coordinate.Direction is LaserDirection.LEFT or LaserDirection.RIGHT):
-                Task.Run(() => TrackLaser(new Coordinate(coordinate.X - 1, coordinate.Y, LaserDirection.LEFT)));
-                Task.Run(() => TrackLaser(new Coordinate(coordinate.X + 1, coordinate.Y, LaserDirection.RIGHT)));
-                break;
-            case false when !(coordinate.Direction is LaserDirection.UP or LaserDirection.DOWN):
-                Task.Run(() => TrackLaser(new Coordinate(coordinate.X, coordinate.Y - 1, LaserDirection.UP)));
-                Task.Run(() => TrackLaser(new Coordinate(coordinate.X, coordinate.Y + 1, LaserDirection.DOWN)));
-                break;
+            if (!(coordinate.Direction is LaserDirection.LEFT or LaserDirection.RIGHT))
+            {
+                var coordinateStringHorizontal = $"{coordinate.Y}{coordinate.X}{coordinate.Direction}";
+                if (LaserOriginPoints.Contains(coordinateStringHorizontal))
+                {
+                    return false;
+                }
+
+                LaserOriginPoints.Add(coordinateStringHorizontal);
+
+                TrackLaser(new Coordinate(coordinate.X, coordinate.Y, LaserDirection.LEFT));
+                TrackLaser(new Coordinate(coordinate.X, coordinate.Y, LaserDirection.RIGHT));
+                return false;
+            }
         }
+        else
+        {
+            if (!(coordinate.Direction is LaserDirection.UP or LaserDirection.DOWN))
+            {
+                var coordinateString = $"{coordinate.Y}{coordinate.X}{coordinate.Direction}";
+                if (LaserOriginPoints.Contains(coordinateString))
+                {
+                    return false;
+                }
+                LaserOriginPoints.Add(coordinateString);
+                TrackLaser(new Coordinate(coordinate.X, coordinate.Y, LaserDirection.UP));
+                TrackLaser(new Coordinate(coordinate.X, coordinate.Y, LaserDirection.DOWN));
+                return false;
+            }
+        }
+        
+        return true;
     }
     
     private bool GoUp(Coordinate coordinate)
@@ -140,7 +157,7 @@ public class MirrorMap
     
     private bool GoDown(Coordinate coordinate)
     {
-        if (coordinate.Y >= MapYLength-1)
+        if (coordinate.Y >= MapYLength - 1)
         {
             return false;
         }
@@ -154,13 +171,13 @@ public class MirrorMap
         {
             return false;
         }
-        coordinate.X-= 1;
+        coordinate.X -= 1;
         return true;
     }
     
     private bool GoRight(Coordinate coordinate)
     {
-        if (coordinate.X >= MapXLength-1)
+        if (coordinate.X >= MapXLength - 1)
         {
             return false;
         }

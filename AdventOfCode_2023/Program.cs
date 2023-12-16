@@ -3,6 +3,7 @@
 using AdventOfCode_2023;
 using AdventOfCode_2023.Day1;
 using AdventOfCode_2023.Day15;
+using AdventOfCode_2023.Day16;
 using AdventOfCode_2023.Day2;
 using AdventOfCode_2023.Day3;
 using AdventOfCode_2023.Day4;
@@ -26,7 +27,7 @@ IDayRunner day5Runner = new Day5Runner();
 IDayRunner day6Runner = new Day6Runner();
 IDayRunner day7Runner = new Day7Runner();
 IDayRunner day15Runner = new Day15Runner();
-
+IDayRunner day16Runner = new Day16Runner();
 // day1Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day1Input.txt"));
 // day2Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day2Input.txt"));
 // day3Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day3Input.txt"));
@@ -34,7 +35,7 @@ IDayRunner day15Runner = new Day15Runner();
 // day5Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day5Input.txt"));
 // day6Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day6Input.txt"));
 // day7Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day7Input.txt"));
-
-day15Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day15Input.txt"));
+// day15Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day15Input.txt"));
+day16Runner.ExecuteTasks(File.ReadAllLines(@"Data\Day16Input.txt"));
 
 Console.ReadLine();
