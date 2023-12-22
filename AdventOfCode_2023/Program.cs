@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using AdventOfCode_2023;
-using AdventOfCode_2023.Day1;
+using AdventOfCode_2023.Day10;
 using AdventOfCode_2023.Day11;
 using AdventOfCode_2023.Day12;
 using AdventOfCode_2023.Day13;
@@ -40,8 +40,8 @@ Console.WriteLine("Hello, Advent of code 2023!");
 // ((IDayRunner) new Day5Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day5Input.txt"));
 // ((IDayRunner) new Day6Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day6Input.txt"));
 // ((IDayRunner) new Day7Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day7Input.txt"));
-// ((IDayRunner) new Day8Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day8Input.txt"));
-((IDayRunner) new Day9Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day9Input.txt"));
+((IDayRunner) new Day8Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day8Input.txt"));
+// ((IDayRunner) new Day9Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day9Input.txt"));
 // ((IDayRunner) new Day10Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day10Input.txt"));
 // ((IDayRunner) new Day11Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day12Input.txt"));
 // ((IDayRunner) new Day12Runner()).ExecuteTasks(File.ReadAllLines(@"Data\Day13Input.txt"));

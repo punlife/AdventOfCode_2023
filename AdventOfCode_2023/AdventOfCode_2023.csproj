@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Content Include="Data\Day8Input.txt" />
         <Content Include="Data\Day9Input.txt" />
         <None Remove="Data\Day1Input.txt"/>
         <Content Include="Data\Day15Input.txt" />
@@ -81,6 +82,7 @@
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
+
 
 
 </Project>
